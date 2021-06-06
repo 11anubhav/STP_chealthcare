@@ -5,29 +5,34 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
+  - married_women
+  - women_right
   - bot_challenge
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hello! How can we help you?"
+    buttons :
+        - title: "Married-women Right"
+          playload: "/ married_women"
+        - title: "Women rights india"
+          playload: "/ women_right"
+          
+  utter_married_women:
+  - text: "check the following link: https://www.shethepeople.tv/law-and-her/legal-rights-married-women-india/"
+   
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_women_right:
+  - text: "“Domestic violence, it does not happen in well to do families, right?” I am generally asked by people outside my professional field. Let me burst the bubble, it happens in shared households in similar manner, whether it is an under-privileged/uneducated category of people or a privileged/educated category of people. There exists no class/caste/creed barrier here. It is prevalent in shared households whether it has highly qualified people or whether it has illiterate daily wage earning people. And therefore we have recourse to it in our laws, prominently the Protection of Women from Domestic Violence Act, 2005 (PWDVA).
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+Read more at: https://www.shethepeople.tv/blog/law-and-her-let-us-be-the-women-who-know-our-legal-rights/"
 
-  utter_happy:
-  - text: "Great, carry on!"
 
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by my Programming Daddy."
 
 session_config:
   session_expiration_time: 60
